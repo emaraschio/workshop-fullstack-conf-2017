@@ -28,3 +28,23 @@ rails s -p 3001
 # Check API
 curl -G http://localhost:3001/api/v1/notes
 ```
+
+
+## Enabling Cross Origin Resource Sharing AKA CORS
+
+```
+# Add the gem to the Gemfile
+gem 'rack-cors', :require => 'rack/cors'
+
+# Install it
+bundle install
+
+# Add this code to config/application.rb file
+
+config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins 'http://localhost:3000'
+    resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
+  end
+end
+```
