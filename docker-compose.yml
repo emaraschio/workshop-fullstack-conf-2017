@@ -14,3 +14,5 @@ services:
       - ./noteboard-client:/app
     ports:
       - "3000:3000"
+    depends_on:
+      - api
