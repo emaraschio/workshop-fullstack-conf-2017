@@ -1,7 +1,7 @@
 
 ## Tools
 
-- Frontend Application: [React](https://reactjs.org/) + [Webpack](https://webpack.github.io/)
+- Frontend Application: [React](https://reactjs.org/) + [Create React App](https://github.com/facebookincubator/create-react-app)
 
 - Backend Application - API: [Ruby on Rails](http://rubyonrails.org/)
 
