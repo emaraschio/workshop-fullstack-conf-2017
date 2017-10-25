@@ -1,0 +1,16 @@
+version: '2'
+services:
+  api:
+    build: noteboard-api
+    image: noteboard-api
+    volumes:
+      - ./noteboard-api:/app
+    ports:
+      - "3001:3001"
+  client:
+    build: noteboard-client
+    image: noteboard-client
+    volumes:
+      - ./noteboard-client:/app
+    ports:
+      - "3000:3000"

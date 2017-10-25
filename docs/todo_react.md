@@ -9,7 +9,7 @@ create-react-app noteboard
 cd noteboard
 
 # Add dependencies
-npm install axios immutability-helper --save
+npm install axios immutability-helper react-transition-group --save
 
 # Start the app
 npm start
