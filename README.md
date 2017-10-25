@@ -7,10 +7,6 @@
 
 - Environment: [Docker](https://www.docker.com/)
 
-- CI: [Circle CI](https://circleci.com/docs/2.0/#)
-
-- QA Environment: [Now.sh](https://now.sh)
-
 - Production Environment: [Digital Ocean](https://www.digitalocean.com)
 
 - Image Builder: [Hashicorp | Packer](https://www.packer.io/intro/getting-started/build-image.html)
