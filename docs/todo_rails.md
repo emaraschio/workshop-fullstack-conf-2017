@@ -19,6 +19,12 @@ cd notepad-api
 rails generate model Note title:string content:string
 rails db:migrate
 
+# Run seeds
+rails db:seed
+
 # Run server
-rails s
+rails s -p 3001
+
+# Check API
+curl -G http://localhost:3001/api/v1/notes
 ```
