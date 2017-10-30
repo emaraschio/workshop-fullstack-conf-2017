@@ -22,7 +22,7 @@ class NoteForm extends Component {
     }
 
     axios.put(
-      `http://localhost:3001/api/v1/notes/${this.props.note.id}`,
+      `${process.env.REACT_APP_API_URL}/api/v1/notes/${this.props.note.id}`,
       {
         note: note
       })
