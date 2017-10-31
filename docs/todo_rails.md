@@ -1,4 +1,4 @@
-## How to create the Rails API App
+## How to create a Rails API App
 
 ```
 # Install rvm

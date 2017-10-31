@@ -1,12 +1,19 @@
-## How to create the containers
+## How to create Docker containers
 
-We will use two containers, one for client and the other for the API
-We need to create two Dockerfiles and a docker-compose.yml
+We will use two containers, one for client App and another for the API.
+We need to one Dockerfile per application and one docker-compose.yml file to link the containers.
 
 ```
 docker-compose build
-
 docker-compose up
 ``` 
 
-Visit http://localhost:3000
+Go to: http://localhost:3000
+
+## Push a container to Docker Hub
+
+```
+docker login
+docker tag name username/container-name
+docker push username/container-name
+``` 

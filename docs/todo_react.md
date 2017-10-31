@@ -1,4 +1,4 @@
-## How to create the React App
+## How to create a React App
 
 ```
 # Install create react app globally 
