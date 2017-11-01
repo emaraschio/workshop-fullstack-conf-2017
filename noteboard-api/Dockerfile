@@ -15,4 +15,5 @@ COPY . /app
 
 EXPOSE 3001
 
+ENTRYPOINT ["bash", "/usr/src/app/docker-entrypoint.sh"]
 CMD bundle exec rails s -p 3001 -b '0.0.0.0'
