@@ -23,7 +23,7 @@ module RailsApp
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins ENV["NOTEBOARD_FRONTEND_URL"]
+        origins ENV["NOTEBOARD_CLIENT_URL"]
         resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
       end
     end
