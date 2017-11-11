@@ -2,19 +2,17 @@ version: '2'
 services:
   api:
     build: noteboard-api
-    image: noteboard-api
+    image: emaraschio/noteboard-api
     volumes:
-      - ./noteboard-api:/app
+      - ./noteboard-api:/usr/src/app
     ports:
-      - "3001:3001"
-    environment:
-     - NOTEBOARD_CLIENT_URL=http://localhost:3000
+      - "3000:3000"
   client:
     build: noteboard-client
-    image: noteboard-client
+    image: emaraschio/noteboard-client
     volumes:
       - ./noteboard-client:/app
     ports:
-      - "3000:3000"
+      - "4000:4000"
     environment:
-     - REACT_APP_API_URL=http://localhost:3001
+     - REACT_APP_API_URL=http://localhost:3000

@@ -1,19 +1,22 @@
 FROM ruby:2.3.3
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 
-RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
 
-RUN echo "gem: --no-rdoc --no-ri" > /etc/gemrc
+ADD Gemfile /usr/src/app/Gemfile
+ADD Gemfile.lock /usr/src/app/Gemfile.lock
+RUN bundle install
+ADD . /usr/src/app
+RUN chmod +x /usr/src/app/docker-entrypoint.sh
 
-RUN mkdir /app
-WORKDIR /app
-COPY Gemfile Gemfile
-COPY Gemfile.lock Gemfile.lock
-RUN bundle install --jobs 20 --retry 5
-COPY . /app
+RUN bundle exec rake db:create
+RUN bundle exec rake db:migrate
+RUN bundle exec rake db:seed
+RUN bundle exec rake db:create RACK_ENV=production
+RUN bundle exec rake db:migrate RACK_ENV=production
+RUN bundle exec rake db:seed RACK_ENV=production
 
-EXPOSE 3001
-
-ENTRYPOINT ["bash", "docker-entrypoint.sh"]
-CMD bundle exec rails s -p 3001 -b '0.0.0.0'
+ENTRYPOINT ["bash","/usr/src/app/docker-entrypoint.sh"]
+CMD ["rails", "s", "-b", "0.0.0.0"]
+EXPOSE 3000
