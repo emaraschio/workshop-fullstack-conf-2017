@@ -11,8 +11,14 @@
 
 set -e
 
-if [ -f tmp/pids/server.pid ]; then
-  rm tmp/pids/server.pid
+if [ -f /usr/src/app/tmp/pids/server.pid ]; then
+  rm /usr/src/app/tmp/pids/server.pid
 fi
+
+
+RACK_ENV=development bundle exec rake db:migrate || bundle exec RACK_ENV=development rake db:setup
+# RACK_ENV=development bundle exec rake db:seed
+RACK_ENV=production bundle exec rake db:migrate || bundle exec RACK_ENV=production rake db:setup
+# RACK_ENV=production bundle exec rake db:seed
 
 exec bundle exec "$@"
