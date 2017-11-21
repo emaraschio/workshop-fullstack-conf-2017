@@ -14,3 +14,4 @@ terraform apply
 terraform destroy
 ```
 
+For more information -> <https://www.terraform.io/>

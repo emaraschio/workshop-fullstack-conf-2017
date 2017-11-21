@@ -23,6 +23,14 @@ docker push username/container-name
 docker tag noteboard-api emaraschio/noteboard-api:latest
 docker push emaraschio/noteboard-api:latest
 
+docker tag noteboard-api emaraschio/noteboard-api:v1
+docker push emaraschio/noteboard-api:v1
+
 docker tag noteboard-client emaraschio/noteboard-client:latest
 docker push emaraschio/noteboard-client:latest
+
+docker tag noteboard-client emaraschio/noteboard-client:v3
+docker push emaraschio/noteboard-client:v3
 ```
+
+For more information -> <https://docs.docker.com/>

@@ -16,5 +16,4 @@ npm start
 
 ```
 
-## Create Noteboard Component
-
+For more information -> <https://github.com/facebookincubator/create-react-app>
