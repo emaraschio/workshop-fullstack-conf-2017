@@ -10,7 +10,7 @@ module "ecs_cluster" {
   source = "./ecs-cluster"
 
   name = "ecs-noteboard"
-  size = 6
+  size = 4
   instance_type = "t2.micro"
   key_pair_name = "${var.key_pair_name}"
 
@@ -35,13 +35,13 @@ module "noteboard_api" {
   version = "${var.noteboard_api_version}"
   cpu = 1024
   memory = 768
-  desired_count = 2
+  desired_count = 1
   
   container_port = "${var.noteboard_api_port}"
   host_port = "${var.noteboard_api_port}"
   elb_name = "${module.noteboard_api_elb.elb_name}"
 
-  num_env_vars = 2
+  num_env_vars = 1
   env_vars = "${map("RAILS_ENV", "production")}"
 }
 
@@ -68,7 +68,7 @@ module "noteboard_client" {
   version = "${var.noteboard_client_version}"
   cpu = 1024
   memory = 768
-  desired_count = 2
+  desired_count = 3
 
   container_port = "${var.noteboard_client_port}"
   host_port = "${var.noteboard_client_port}"
