@@ -29,6 +29,11 @@ rails s -p 3001
 curl -G http://localhost:3001/api/v1/notes
 ```
 
+## Run tests
+
+```
+docker-compose run -e "RAILS_ENV=test" api bundle exec rspec spec/
+``` 
 
 ## Enabling Cross Origin Resource Sharing AKA CORS
 

@@ -20,5 +20,7 @@ RACK_ENV=development bundle exec rake db:migrate || bundle exec RACK_ENV=develop
 # RACK_ENV=development bundle exec rake db:seed
 RACK_ENV=production bundle exec rake db:migrate || bundle exec RACK_ENV=production rake db:setup
 # RACK_ENV=production bundle exec rake db:seed
+RACK_ENV=test bundle exec rake db:migrate || bundle exec RACK_ENV=test rake db:setup
+# RACK_ENV=test bundle exec rake db:seed
 
 exec bundle exec "$@"
