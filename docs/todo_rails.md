@@ -23,10 +23,10 @@ rails db:migrate
 rails db:seed
 
 # Run server
-rails s -p 3001
+rails s
 
 # Check API
-curl -G http://localhost:3001/api/v1/notes
+curl -G http://localhost:3000/api/v1/notes
 ```
 
 ## Run tests
@@ -48,7 +48,7 @@ bundle install
 
 config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:3000'
+    origins 'http://localhost:4000'
     resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
   end
 end

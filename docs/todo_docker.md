@@ -8,7 +8,7 @@ docker-compose build
 docker-compose up
 ``` 
 
-Go to: http://localhost:3000
+Go to: http://localhost:4000
 
 ## Push a container to Docker Hub
 
