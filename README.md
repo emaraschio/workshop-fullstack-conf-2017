@@ -28,9 +28,14 @@ The `docker-compose.yml` file mounts `noteboard-client` and `noteboard-api` fold
 
 You will find a lot of resources on `docs` folder, please see the list below:
 
-![Homework](/docs/homework.md)
-![Resources](/docs/resources.md)
-![React](/docs/react.md)
-![Rails](/docs/rails.md)
-![Docker](/docs/docker.md)
-![Terraform](/docs/terraform.md)
+- ![Homework](/docs/homework.md)
+
+- ![Resources](/docs/resources.md)
+
+- ![React](/docs/react.md)
+
+- ![Rails](/docs/rails.md)
+
+- ![Docker](/docs/docker.md)
+
+- ![Terraform](/docs/terraform.md)
