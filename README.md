@@ -23,3 +23,14 @@ To run the client and the API on your local machine:
 4. Test the client (and its connectivity to the API) by going to http://localhost:4000.
 
 The `docker-compose.yml` file mounts `noteboard-client` and `noteboard-api` folders as volumes in each Docker image, so any changes you make to the apps on your host OS will automatically be reflected in the running Docker container. This lets you do iterative "make-a-change-and-refresh" style development.
+
+### Docs
+
+You will find a lot of resources on `docs` folder, please see the list below:
+
+![Homework](/docs/homework.md)
+![Resources](/docs/resources.md)
+![React](/docs/react.md)
+![Rails](/docs/rails.md)
+![Docker](/docs/docker.md)
+![Terraform](/docs/terraform.md)
