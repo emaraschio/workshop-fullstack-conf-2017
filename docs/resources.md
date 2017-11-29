@@ -33,3 +33,5 @@ Docker, Rails, & Docker Compose together in your development workflow](https://b
 - ![Terraform Docker ECS Rails App](https://github.com/kuldeep-surendra/terraform-docker-ecs-rails_app)
 
 - ![Basic Two-Tier Architecture in Google Cloud](https://github.com/domingusj/terraform-rails)
+
+- ![AWS’s container service gets support for Kubernetes](https://techcrunch.com/2017/11/29/awss-container-service-gets-support-for-kubernetes/)
