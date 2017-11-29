@@ -39,3 +39,7 @@ You will find a lot of resources on `docs` folder, please see the list below:
 - ![Docker](/docs/docker.md)
 
 - ![Terraform](/docs/terraform.md)
+
+### Slides
+
+You can find the slides [here](https://www.slideshare.net/emaraschio/fullstack-conf-2017-basic-dev-pipeline-endtoend)
