@@ -15,10 +15,14 @@
 
 - ![Creating a new Rails application project with Docker](https://github.com/IcaliaLabs/guides/wiki/Creating-a-new-Rails-application-project-with-Docker)
 
+- ![Docker Tag commandline](https://docs.docker.com/engine/reference/commandline/tag)
+
 - ![
 Docker, Rails, & Docker Compose together in your development workflow](https://blog.carbonfive.com/2015/03/17/docker-rails-docker-compose-together-in-your-development-workflow/)
 
 - ![A Comprehensive Guide to Terraform](https://blog.gruntwork.io/a-comprehensive-guide-to-terraform-b3d32832baca)
+
+- ![Terraform Configuration Docs](https://www.terraform.io/docs/configuration)
 
 - ![AWS ECS terraform module](https://github.com/arminc/terraform-ecs)
 
