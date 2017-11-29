@@ -24,7 +24,9 @@ Docker, Rails, & Docker Compose together in your development workflow](https://b
 
 - ![Terraform Configuration Docs](https://www.terraform.io/docs/configuration)
 
-- ![Amazon Elastic Container Service ](http://docs.aws.amazon.com/es_es/AmazonECS/latest/developerguide/ecs_services.html)
+- ![Amazon Elastic Container Service](http://docs.aws.amazon.com/es_es/AmazonECS/latest/developerguide/ecs_services.html)
+
+- ![Amazon ECS Task Definitions](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
 
 - ![AWS ECS terraform module](https://github.com/arminc/terraform-ecs)
 
