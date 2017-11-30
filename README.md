@@ -42,4 +42,4 @@ You will find a lot of resources on `docs` folder, please see the list below:
 
 ### Slides
 
-You can find the slides [here](https://www.slideshare.net/emaraschio/fullstack-conf-2017-basic-dev-pipeline-endtoend)
+You can find the slides [here](https://www.slideshare.net/emaraschio/fullstack-conf-2017-basic-dev-pipeline-endtoend-83085680)
